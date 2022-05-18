@@ -1,22 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tris.css">
     <title>TRIS</title>
 </head>
+
 <body>
-    <h1>il gioco del tris</h1>
-    <div class="descriptionContainer">
-        <pre>
-            Il gioco inizia cliccando su una casella
-            Il primo giocatore sarà contaddistinto con le X <strong>Giocatore X</strong>
-            Il secondo giocatore sarà contaddistinto con le X <strong>Giocatore O</strong>
-            Vince il giocatore che per primo riuscirà ad ottenere 3 simboli consecutivi, orizzontale, verticale o diagonale
-            Altrimenti la partita finisce in pareggio
-        </pre>
+    <div class="mainContainer">
+        <h1>il gioco del tris</h1>
+        <div class="descriptionContainer">
+            <pre>
+                Il gioco inizia cliccando su una casella
+                Il primo giocatore sarà contaddistinto con le X <strong>Giocatore X</strong>
+                Il secondo giocatore sarà contaddistinto con le X <strong>Giocatore O</strong>
+                Vince il giocatore che per primo riuscirà ad ottenere 3 simboli consecutivi, orizzontale, verticale o diagonale
+                Altrimenti la partita finisce in pareggio
+            </pre>
+        </div>
+        <div class="trisContainer">
+            <table class="trisTable">
+                <tr>
+                    <td><button class="cell" onclick="cliccked(1)"></button></td>
+                    <td><button class="cell" onclick="cliccked(2)"></button></td>
+                    <td><button class="cell" onclick="cliccked(3)"></button></td>
+                </tr>
+                <tr>
+                    <td><button class="cell" onclick="cliccked(4)"></button></td>
+                    <td><button class="cell" onclick="cliccked(5)"></button></td>
+                    <td><button class="cell" onclick="cliccked(6)"></button></td>
+                </tr>
+                <tr>
+                    <td><button class="cell" onclick="cliccked(7)"></button></td>
+                    <td><button class="cell" onclick="cliccked(8)"></button></td>
+                    <td><button class="cell" onclick="cliccked(9)"></button></td>
+                </tr>
+
+            </table>
+        </div>
+
+        <button class="gameButton" onclick="resetGame()"> Reset </button>
+
+
+
     </div>
-    
+    <script type="text/javascript" src="tris.js"></script>
 </body>
+
 </html>
