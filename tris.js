@@ -57,7 +57,7 @@ function isVictory() {
     buttonArray[6].innerHTML == "X"
   )
     alert("Vittoria Giocatore X");
-  /*---------------------------------------*/ else if (
+  else if (
     buttonArray[0].innerHTML == "O" &&
     buttonArray[1].innerHTML == "O" &&
     buttonArray[2].innerHTML == "O"
@@ -93,6 +93,5 @@ function isVictory() {
     buttonArray[6].innerHTML == "O"
   )
     alert("Vittoria Giocatore O");
-  else if (turno == 9)
-    alert("Pareggio");
+  else if (turno == 9) alert("Pareggio");
 }
