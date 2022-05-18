@@ -21,7 +21,7 @@ function resetGame() {
   simbol = "X";
   turno = 1;
   isFinisched = false;
-  playerTurn.innerHTML = "Turno giocaotre X";
+  playerTurn.innerHTML = "Turno giocatore X";
   for (let index = 0; index < btn.length; index++) {
     btn[index].innerHTML = "";
     btn[index].disabled = false;
