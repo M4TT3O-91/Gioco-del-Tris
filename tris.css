@@ -73,3 +73,16 @@ pre::after{
 .gameButton:hover{
     background-color: rgb(0, 70, 176);
 }
+
+.footerDiv{
+    padding-top: 50px;
+    margin: auto;
+}
+
+#playerTurn{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 30px;
+   font-weight: 200;
+   align-items: center; 
+   color: rgb(72, 72, 72);
+}
