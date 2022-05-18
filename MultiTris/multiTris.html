@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TRIS</title>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <h1>il gioco del tris</h1>
+        <div class="descriptionContainer">
+            <pre>
+                Il gioco inizia cliccando su una casella
+                Il primo giocatore sarà contaddistinto con le X <strong>Giocatore X</strong>
+                Il secondo giocatore sarà contaddistinto con le X <strong>Giocatore O</strong>
+                Vince il giocatore che per primo riuscirà ad ottenere N simboli consecutivi, orizzontale, verticale o diagonale
+                Altrimenti la partita finisce in pareggio
+            </pre>
+            <div class="inputCell">
+                <label for="cellInput">Inserire il numero di celle: </label>
+                <input type="number" name="cellInput" id="cellInput" placeholder="es: 3, 6...">
+                <button class="gameButton" onclick="generateBoard()">Generate</button>
+            </div>
+        </div>
+        <div id="trisContainer" class="trisContainer">
+
+        </div>
+
+        
+        <div id="footerDiv" class="footerDiv">
+            <button class="gameButton" onclick="resetGame()"> Reset </button>
+            <p id="playerTurn">Turno Giocatore X</p>
+        </div>
+
+
+
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
