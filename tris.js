@@ -6,14 +6,15 @@ var isFinisched = false;
 
 function cliccked(position) {
   if (!isFinisched) {
-    if (turno % 2) simbol = "X";
-    else simbol = "O";
-    playerTurn.innerHTML = "Turno Giocatore " + simbol;
     btn[position - 1].innerHTML = simbol;
     btn[position - 1].disabled = true;
     isVictory("X");
     isVictory("O");
     turno++;
+    if (turno % 2) simbol = "X";
+    else simbol = "O";
+    console.log(simbol);
+    playerTurn.innerHTML = "Turno Giocatore " + simbol;
   }
 }
 
@@ -21,7 +22,7 @@ function resetGame() {
   simbol = "X";
   turno = 1;
   isFinisched = false;
-  playerTurn.innerHTML = "Turno giocatore X";
+  playerTurn.innerHTML = "Turno Giocatore X";
   for (let index = 0; index < btn.length; index++) {
     btn[index].innerHTML = "";
     btn[index].disabled = false;
